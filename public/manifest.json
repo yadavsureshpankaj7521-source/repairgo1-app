@@ -1,0 +1,45 @@
+{
+  "id": "com.repairgo1.app",
+  "name": "RepairGo1 - AC Service App",
+  "short_name": "RepairGo1",
+  "description": "Book expert AC service, repair, gas charging & deep jet cleaning with 30-day warranty.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#0f172a",
+  "theme_color": "#1e40af",
+  "lang": "en",
+  "dir": "ltr",
+  "categories": ["utilities", "business", "lifestyle"],
+  "icons": [
+    {
+      "src": "https://cdn-icons-png.flaticon.com/512/2933/2933822.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "https://cdn-icons-png.flaticon.com/512/2933/2933822.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Book AC Service",
+      "short_name": "Book Service",
+      "description": "Book expert technician for AC servicing",
+      "url": "/#services",
+      "icons": [{ "src": "https://cdn-icons-png.flaticon.com/512/2933/2933822.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Track Booking",
+      "short_name": "Track",
+      "description": "Check real-time technician status",
+      "url": "/#track",
+      "icons": [{ "src": "https://cdn-icons-png.flaticon.com/512/2933/2933822.png", "sizes": "192x192" }]
+    }
+  ]
+}

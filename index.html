@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#1e40af" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="RepairGo1" />
+    <meta name="application-name" content="RepairGo1" />
+    
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/512/2933/2933822.png" />
+    <link rel="apple-touch-icon" href="https://cdn-icons-png.flaticon.com/512/2933/2933822.png" />
+    
+    <title>RepairGo1 - AC Service App</title>
+    <meta name="description" content="Book expert AC service, repair, gas charging & deep jet cleaning with 30-day warranty." />
+    <meta property="og:title" content="RepairGo1 - AC Service App" />
+    <meta property="og:description" content="Book expert AC service, repair, gas charging & deep jet cleaning with 30-day warranty." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', function() {
+          navigator.serviceWorker.register('/sw.js', { scope: '/' })
+            .then(function(reg) {
+              console.log('ServiceWorker registered with scope:', reg.scope);
+            })
+            .catch(function(err) {
+              console.log('ServiceWorker registration error:', err);
+            });
+        });
+      }
+    </script>
+  </body>
+</html>
+

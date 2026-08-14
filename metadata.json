@@ -1,0 +1,6 @@
+{
+  "name": "RepairGo1 - AC Service App",
+  "description": "Premium AC Service, Repair, Deep Cleaning, & Maintenance Booking Platform with Verified Technicians, Instant Quote Estimator & AI Diagnostic Assistant.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
